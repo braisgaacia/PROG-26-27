@@ -1,0 +1,22 @@
+
+
+/* @author Brais */
+
+public class EvaluarExpresiones1 {
+
+    public static void main(String[] args) {
+
+        int a = 8;
+        int b = 3;
+        int c = -5;
+
+       System.out.println( a + b + c ); 
+       System.out.println(2 * b + 3 * (a - c));
+       System.out.println(a / b);
+       System.out.println(a % b);
+       System.out.println(a / c );
+       System.out.println(a % c);
+
+ 
+    }
+}

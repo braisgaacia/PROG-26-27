@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class EcuacionGrado2 {
 
     public static void main(String[] args) {
-        
-        //Entrada de datos
+
+        // Entrada de datos
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduce los valores de a , b y c para calcular la ecuación de segundo grado: ");
@@ -13,22 +13,20 @@ public class EcuacionGrado2 {
         Double c = sc.nextDouble();
         sc.close();
 
-        //Cálculo
+        // Cálculo
 
-        Double resultadox1 = ( ( -b ) + Math.sqrt ( Math.pow ( b, 2 ) - 4 * a * c ) ) / (2 * a);
-        Double resultadox2 = ( ( -b ) - Math.sqrt ( Math.pow ( b, 2 ) - 4 * a * c ) ) / (2 * a);
+        // Calcular la raíz por separado para saber luego si es real o no
+        Double numeroRaíz = Math.pow(b, 2) - 4 * a * c;
 
-        //Calcular la raíz por separado para saber luego si es real o no
+        Double resultadox1 = ( ( -b ) + Math.sqrt ( numeroRaíz ) ) / ( 2 * a );
+        Double resultadox2 = ( ( -b ) - Math.sqrt ( numeroRaíz ) ) / ( 2 * a );
 
-        Double raíz = Math.pow ( b, 2 ) - 4 * a * c ;
-
-        //Resultado
+        // Resultado
 
         System.out.println("================");
         System.out.println("RESULTADOS");
-        System.out.println( raíz >= 0 ? "El resultado es " + resultadox1 : "No tiene solución real");
-        System.out.println( raíz >= 0 ? "El resultado es " + resultadox2 : "No tiene solución real");
-    
+        System.out.println(numeroRaíz >= 0 ? "El resultado es " + resultadox1 : "No tiene solución real");
+        System.out.println(numeroRaíz >= 0 ? "El resultado es " + resultadox2 : "No tiene solución real");
 
     }
 
