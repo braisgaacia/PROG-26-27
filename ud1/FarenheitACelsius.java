@@ -15,7 +15,7 @@ public class FarenheitACelsius {
 
         // Cálculo
 
-        Double celsius = ( 5 * (farenheit - 32) ) / 9;
+        Double celsius = ( 5. * ( farenheit - 32 ) ) / 9; // "." Para convertir el int en decimal
 
         // Resultado
 

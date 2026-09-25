@@ -4,9 +4,7 @@ public class Entradas {
 
     public static void main(String[] args) {
 
-        final int DESCUENTO = 5;
-
-        // Información
+    
         System.out.println("ENTRADAS PARQUE ACUÁTICO");
         System.out.println("========================");
 
@@ -16,11 +14,12 @@ public class Entradas {
         int entradasInfantiles = sc.nextInt();
         System.out.println("Introduce la cantidad de entradas de adultos (20 €): ");
         int entradasAdultos = sc.nextInt();
+        sc.close();
 
         //Cálculo total
         double total = 15.50 * entradasInfantiles + 20 * entradasAdultos;
         //Cálculo "descuento"
-        double descuentoAplicado = total * ( 0.05 );
+        double descuentoAplicado = total * ( 0.05);
         double totalConDescuento = total - descuentoAplicado;
         //Saber si hay descuento
         boolean hayDescuento = total >= 100;
@@ -29,7 +28,7 @@ public class Entradas {
         System.out.println("TOTAL");
         System.out.println("==========");
         System.out.println( hayDescuento == true ? "Precio base : " + total : "Precio TOTAL : " + total + " €" );
-        System.out.println( hayDescuento == true ? "Descuento ( " + DESCUENTO + " % ) : - " + descuentoAplicado + " €" : "");
+        System.out.println( hayDescuento == true ? "Descuento ( 5 % ) : - " + descuentoAplicado + " €" : "");
         System.out.println(hayDescuento == true ? "Precio TOTAL: " + totalConDescuento + " €": "");
 
     
