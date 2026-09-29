@@ -13,12 +13,11 @@ public class MultiploDe7 {
         sc.close();
 
         //Cálculo
-        int resto = numEntero % 7;
+        int numSumar = ((-(numEntero % 7) + 7) % 7);
+
+        //Salida
         
-
-
-        System.out.println(resto);
-        System.out.println(división);
+        System.out.println("El número que hay que sumarle para que sea múltiplo de siete es " +numSumar);
 
     }
 
