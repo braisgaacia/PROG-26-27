@@ -7,7 +7,7 @@ public class FechaCorrecta {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Introduce el DÍA , MES y AÑO de una fecha");
+        System.out.println("Introduce el DÍA , MES y AÑO de una fecha:");
         int dia = sc.nextInt();
         int mes = sc.nextInt();
         int año = sc.nextInt();
