@@ -10,7 +10,7 @@ public class EstadisticaEdad {
         System.out.println("Introduce las edades de los alumnos (número negativo para finalizar):");
 
         int edad = sc.nextInt();
-        int nAlumnos = 0;
+        double nAlumnos = 0;
         int sumaEdades = 0;
         int sumaMayores = 0;
         double media = 0;

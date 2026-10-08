@@ -7,12 +7,12 @@ public class NumeroSecretoAmpliado {
 
     public static void main(String[] args) {
         
-        final int NUMERO_1 = 1;
-        final int NUMERO_2 = 100;
+        final int NUMERO_MIN = 1;
+        final int NUMERO_MAX = 100;
 
         Random rnd = new Random();
         
-        int random = rnd.nextInt(NUMERO_1 , NUMERO_2 + 1);
+        int random = rnd.nextInt(NUMERO_MIN , NUMERO_MAX + 1);
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduce números para acertar (-1 para rendirse): ");
