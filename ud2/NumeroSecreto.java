@@ -11,7 +11,6 @@ public class NumeroSecreto {
         final int NUMERO_MAX = 100;
 
         Random rnd = new Random();
-        
         int random = rnd.nextInt(NUMERO_MIN , NUMERO_MAX + 1);
 
         Scanner sc = new Scanner(System.in);

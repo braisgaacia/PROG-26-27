@@ -22,7 +22,8 @@ public class ArbolMasAlto {
             if (altura == alturaMax) {
                 etiquetaMax = etiqueta;
             }
-            
+
+            sc.nextLine();
             System.out.println("Introduce un nuevo valor para la etiqueta (etiqueta vacía para terminar):");
             etiqueta = sc.nextLine();
             System.out.println("Introduce la altura del árbol (-1 para terminar):");
@@ -31,7 +32,7 @@ public class ArbolMasAlto {
         }
 
         sc.close();
-        System.out.println("El árbol más alto es: " + etiquetaMax + ", y su altura es de " + alturaMax + "");
+        System.out.println("El árbol más alto es: " + etiquetaMax + ", y su altura es de " + alturaMax + " cm.");
 
         
     }   
