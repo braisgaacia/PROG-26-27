@@ -15,7 +15,7 @@ public class ArbolMasAlto {
         double alturaMax = altura;
         String etiquetaMax = etiqueta;
 
-        while (etiqueta != null && altura != -1) {
+        while (!etiqueta.isEmpty()&& altura != -1) {
             
             alturaMax = Math.max(alturaMax, altura);
 
