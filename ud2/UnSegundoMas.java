@@ -11,6 +11,7 @@ public class UnSegundoMas {
         int horas = sc.nextInt();
         int minutos = sc.nextInt();
         int segundos = sc.nextInt();
+        sc.close();
 
         if (horas > 23 || horas < 0) {
             System.out.println("Formato no válido");
