@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Calculadora",
+            "request": "launch",
+            "mainClass": "ud2.Calculadora",
+            "projectName": "PROG-26-27_3b93eca6"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"

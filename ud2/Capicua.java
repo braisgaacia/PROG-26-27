@@ -6,7 +6,7 @@ public class Capicua {
 
     public static boolean esCapicua(long n) {
 
-        long original = n;
+        long original = n; //Variable original
         long invertido = 0;
 
         //Bucle para darle la vuelta al número
@@ -27,9 +27,8 @@ public class Capicua {
         long numeroIntroducido = sc.nextLong();
         sc.close();
 
-        boolean resultado = esCapicua(numeroIntroducido);
 
-        System.out.println("El número es capicúa ? " + resultado);
+        System.out.println("El número es capicúa ? " + esCapicua(numeroIntroducido));
 
         
     }

@@ -13,7 +13,7 @@ public class UnDiaMas {
         int ano = sc.nextInt();
         sc.close();
 
-        //( Suponiendo que todos los meses del año tienen 30 días )
+        //Suponiendo que todos los meses del año tienen 30 días.
         int diaSumado = dia +1;
 
         if (diaSumado > 30) {
