@@ -10,7 +10,7 @@ public class MCD {
         } else if (b > a) {
             return mcd(a, b -a);
         } else {
-            return mcd(a -b, b);
+            return mcd(a - b, b);
         }
     }
 
