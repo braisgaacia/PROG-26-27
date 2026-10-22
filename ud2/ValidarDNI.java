@@ -70,22 +70,23 @@ public class ValidarDNI {
     }
 
     public static void main(String[] args) {
-        
+
         Scanner sc = new Scanner(System.in);
-        int numeroDni = 11111111;
+        System.out.println("Introduce tu número de DNI para averiguar la letra: ");
+        int numeroDni = sc.nextInt();
 
-        do {
-            if (esCorrecto(numeroDni) == false) {
-                System.out.println("El número del DNI no es válido.");
-            }
+        while (esCorrecto(numeroDni) == false) {
 
-            System.out.println("Introduce tu número de DNI para averiguar la letra: ");
+            System.out.println("\nEl número del DNI no es válido.");
+            System.out.println("==============================\n");
+
+            System.out.println("Vuelve a introducir el número del DNI:");
             numeroDni = sc.nextInt();
 
-        } while (esCorrecto(numeroDni) == false);
+        }
 
         sc.close();
-        System.out.println("La letra del DNI: " + numeroDni + " es: " + letraDni(numeroDni));
+        System.out.println("La letra del DNI " + numeroDni + " es: " + letraDni(numeroDni));
 
     }
 }
