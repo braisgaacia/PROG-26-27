@@ -11,13 +11,23 @@ public class ChiclesDeRegalo {
             if (numOferta == 0) {
                 return numIniciales;
             } else if (numOferta < numIniciales) {
-                if (chiclesGratis < numOferta ) {
-                return numIniciales + numOferta + chiclesGratis;
-                } else return -1; 
-            } else if () { // HACER CONTADOR //
-                
-            }
+                if (chiclesGratis < numOferta) {
+                    return numIniciales + numOferta + chiclesGratis;
+                } else
+                    return -1;
+            } else { // FALTA POR ENTENDER //
+                int totalComidos = numIniciales;
+                int envoltorios = numIniciales;
 
+                while (envoltorios >= numOferta) {
+                    int nuevosChicles = (envoltorios / numOferta) * chiclesGratis;
+                    totalComidos += nuevosChicles;
+                    envoltorios = (envoltorios % numOferta) + nuevosChicles;
+                }
+
+                return totalComidos;
+
+            }
 
         } else
             return -1;
