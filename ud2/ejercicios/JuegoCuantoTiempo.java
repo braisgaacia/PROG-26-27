@@ -9,12 +9,12 @@ public class JuegoCuantoTiempo {
     public static void main(String[] args) {
 
         final int MINIMO_SEGUNDOS = 5;
-        final int MAXIMO_SEGUNDOS = 10;
+        final int MAXIMO_SEGUNDOS = 30;
 
         Random rnd = new Random();
-        int segundosAleatorio = rnd.nextInt(MINIMO_SEGUNDOS, MAXIMO_SEGUNDOS + 1);
+        int segundos = rnd.nextInt(MINIMO_SEGUNDOS, MAXIMO_SEGUNDOS + 1);
 
-        System.out.println("Pulsa ENTER en " + segundosAleatorio + " segundos.\n");
+        System.out.println("Pulsa ENTER en " + segundos + " segundos.\n");
 
         LocalTime tiempoInicial = LocalTime.now();
         int segundosIniciales = tiempoInicial.getSecond();
@@ -35,17 +35,15 @@ public class JuegoCuantoTiempo {
             diferenciaSegundos = segundosFinales - segundosIniciales;
         }
 
-        if (diferenciaSegundos == segundosAleatorio) {
+        if (diferenciaSegundos == segundos) {
             System.out.println("Felicidades ! Has acertado en los segundos exactos ");
-        } else if (diferenciaSegundos < segundosAleatorio) {
-            int segundosAdelantado = segundosAleatorio - diferenciaSegundos;
+        } else if (diferenciaSegundos < segundos) {
+            int segundosAdelantado = segundos - diferenciaSegundos;
             System.out.println("Te has adelantado , te han faltado " + segundosAdelantado + " segundos.");
         } else {
-            int segundosAtrasado = diferenciaSegundos - segundosAleatorio;
+            int segundosAtrasado = diferenciaSegundos - segundos;
             System.out.println("Te has atrasado " + segundosAtrasado + " segundos.");
         }
 
-        System.out.println(tiempoInicial);
-        System.out.println(tiempoFinal);
     }
 }
