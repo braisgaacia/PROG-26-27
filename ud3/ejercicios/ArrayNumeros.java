@@ -1,4 +1,5 @@
-package ud3.ejemplos.ejercicios;
+package ud3.ejercicios;
+
 
 import java.util.Scanner;
 
@@ -21,6 +22,8 @@ public class ArrayNumeros {
 
             numeros[posiciones] = numerointroducido;
         }
+
+        sc.nextDouble();
 
         int contadorCeros = 0;
 

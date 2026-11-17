@@ -7,7 +7,7 @@ public class Ejemplo1 {
     public static void main(String[] args) {
         double numerosReales[];
         int[] numerosEnteros = new int[6];
-        boolean[] booleanos = new boolean[10];
+        boolean[] booleanos = new boolean[10]; // ESTE
         char[] letras = new char[5];
         String[] frases = new String[20];
         LocalDate[] fecha = new LocalDate[3];
